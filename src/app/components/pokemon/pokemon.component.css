@@ -1,0 +1,31 @@
+.container{
+  margin: 30px !important;
+}
+
+.PokemonImage {
+  display: inline-flex;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.card-title {
+  text-align: center;
+}
+
+p.card-text.types {
+  text-align: center;
+  padding: 15px
+}
+
+p {
+  font-weight: bold;
+  text-align: right;
+}
+
+.pokemonInfo {
+  font-size: large;
+  font-weight: bold;
+  padding-left: 10px;
+}

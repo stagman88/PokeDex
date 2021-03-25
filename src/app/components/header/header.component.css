@@ -1,0 +1,32 @@
+nav.navbar.navbar-dark {
+  height: 120px;
+  background-color: #CC0000;
+  overflow: hidden;
+}
+
+a.navbar-brand img.logo {
+  height: 100px;
+  margin-left: 20px;
+}
+
+ul.navbar-nav.me-auto.mb-2.mb-lg-0 {
+  display: inline-flex;
+  margin-left: 20px;
+}
+
+nav.navbar img.pokemonImg {
+  display: block;
+  position: absolute;
+  right: 5px;
+  height: 250px;
+}
+
+@media (max-width:750px) {
+  nav.navbar img.pokemonImg {
+    display: none;
+  }
+
+  a.navbar-brand img.logo {
+    align-items: center;
+  }
+}

@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="card mb-3 shadow" style="max-width: fluid; border: solid 1px black">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img class="PokemonImage" src="{{ pokemonDetails.sprites.front_default }}" alt="{{ pokemonDetails.name }}">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h1 class="card-title">{{ pokemonDetails.name }}</h1>
+          <p 
+            class="card-text types" 
+            *ngFor="let type of pokemonDetails.types"
+            [style.background]="getTypeColour(pokemonDetails.types[0].type.name)"
+            >{{ pokemonDetails.types[0].type.name | titlecase }}
+          </p>
+          <p>Height:  {{ pokemonDetails.height}}</p>
+          <p>Weight:  {{ pokemonDetails.weight}}</p>
+        </div>
+      </div>
+      <div class="container fluid">
+        <div class="row" style="text-align: center; border-top: solid 2px; padding-bottom: 20px">
+            <!-- <div style="text-align: center; border-top: solid 2px; padding-bottom: 20px" fluid></div> -->
+            <div class="col-6">
+              <h4 style="text-align: center; padding: 20px">Stats</h4>
+              <p>Attack: {{ pokemonDetails.stats[1].base_stat }}</p>
+              <p>Health: {{ pokemonDetails.stats[0].base_stat }}</p>
+              <p>Defence: {{ pokemonDetails.stats[2].base_stat }}</p>
+              <p>Speed: {{ pokemonDetails.stats[3].base_stat }}</p>
+              <p>Special-Attack: {{ pokemonDetails.stats[4].base_stat }}</p>
+              <p>Special-Defence: {{ pokemonDetails.stats[5].base_stat }}</p>
+            </div>
+            <div class="col-6">
+              <h4 style="text-align: center; padding: 20px">Skills</h4>
+              <p>{{ pokemonDetails.moves[1].move.name }}</p>
+              <p>{{ pokemonDetails.moves[2].move.name }}</p>
+              <p>{{ pokemonDetails.moves[3].move.name }}</p>
+              <p>{{ pokemonDetails.moves[4].move.name }}</p>
+              <p>{{ pokemonDetails.moves[5].move.name }}</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>

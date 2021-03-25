@@ -1,0 +1,51 @@
+.loading {
+  text-align: center;
+}
+
+.pokemon-row {
+  display: block;
+  width: auto;
+  margin: 0;
+  padding: 50px;
+  border: 0;
+  text-align: center;
+}
+
+div.card {
+  display: inline-flex;
+  width: 300px;
+  height: 580px;
+  margin: 20px;
+  cursor: pointer;
+  border: solid 1px;
+  transition: transform 0.2s;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+div.card-container {
+ text-align: center;
+}
+
+div.card:hover {
+  transform: scale(1.1);
+  z-index: 99;
+}
+
+img.card-img-top {
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  padding-top: 20px;
+}
+
+.pokemon-row .list .grid .pokemonName {
+  position: relative;
+  width: 300px;
+  align-self: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+pagination-controls {
+  text-align: center;
+}
